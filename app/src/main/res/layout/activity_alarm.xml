@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="itad230.alarmclock.AlarmActivity">
+
+    <EditText
+        android:id="@+id/Hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter numeric value for hour"/>
+    <EditText
+        android:id="@+id/Minute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter numeric value for minute"/>
+    <EditText
+        android:id="@+id/Msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the message"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm"
+        android:onClick="onSetAlarmClicked" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancle"
+        android:onClick="cancel"/>
+
+</LinearLayout>
